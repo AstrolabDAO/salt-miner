@@ -13,7 +13,7 @@ use clap::Parser;
 #[command(author, version, about, long_about = None)]
 struct Args {
   /// Deployer address in hex format, defaults to dummy deployer address
-  #[arg(long, default_value = "0x026E222AC6aD0BA8AD04efd7BCf6025e40457345")]
+  #[arg(long)]
   deployer_address: Address,
   /// Create2 deploy bytecode hash in hex format, defaults to Axelar CreateDeploy bytecode hash
   #[arg(long, default_value = "6803d80924868e122b4d95a102318f0b1b97bcecc0ef62c3c7835b4198f98a28")]
